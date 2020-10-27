@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PCGamingWiki Dark
 @namespace      https://github.com/jwortmann/stylus-themes
-@version        1.0.1
+@version        1.0.2
 @description    A dark UserCSS style for PCGamingWiki
 @author         Janos Wortmann <jwortmann@outlook.com>
 @homepageURL    https://github.com/jwortmann/stylus-themes
@@ -70,9 +70,16 @@
     }
 
     .wikitable,
-    table.wikitable > tr > th, table.wikitable > * > tr > th {
+    table.wikitable > tr > th, table.wikitable > * > tr > th,
+    table.pcgwikitable {
         background-color: var(--grey1) !important;
         color: var(--foreground) !important;
+    }
+
+    .page-Home .table-assignment-body-row,
+    .page-Home .table-assignment-body-row .table-assignment-body-game,
+    .page-Home .table-assignment-body-row .table-assignment-body-status {
+        background-color: var(--grey1) !important;
     }
 
     .ipsBox,
